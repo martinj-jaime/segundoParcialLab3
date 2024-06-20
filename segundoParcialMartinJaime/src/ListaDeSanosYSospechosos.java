@@ -1,5 +1,6 @@
 import com.fasterxml.jackson.annotation.JsonProperty;
 import model.Paciente;
+import model.PacienteAislado;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +10,7 @@ public class ListaDeSanosYSospechosos {
     @JsonProperty("sanos")
     private List<Paciente> sanos = new ArrayList<>();
     @JsonProperty("aislados")
-    private List<Paciente> aislados = new ArrayList<>();
+    private List<PacienteAislado> aislados = new ArrayList<>();
 
 
     // region Getters & Setters
@@ -21,11 +22,11 @@ public class ListaDeSanosYSospechosos {
         this.sanos = sanos;
     }
 
-    public List<Paciente> getAislados() {
+    public List<PacienteAislado> getAislados() {
         return aislados;
     }
 
-    public void setAislados(List<Paciente> aislados) {
+    public void setAislados(List<PacienteAislado> aislados) {
         this.aislados = aislados;
     }
     // endregion
@@ -34,7 +35,7 @@ public class ListaDeSanosYSospechosos {
         sanos.add(paciente);
     }
 
-    public void agregarAislado(Paciente paciente) {
+    public void agregarAislado(PacienteAislado paciente) {
         aislados.add(paciente);
     }
 

@@ -5,6 +5,7 @@ import exceptions.ECovidPositivo;
 import exceptions.EElPacienteYaExistente;
 import exceptions.ESinKitParaTestear;
 import model.Paciente;
+import model.PacienteAislado;
 import model.Registro;
 
 import java.io.File;
@@ -112,7 +113,7 @@ public class SSM {
 
     private void validarCovidPositivo(Registro registro) throws ECovidPositivo {
         if(registro.getTemperatura() >= 38) {
-            throw new ECovidPositivo("Es un caso de covid positivo");
+            throw new ECovidPositivo("Es un caso de covid positivo", registro.getTemperatura());
         }
     }
 
@@ -122,16 +123,18 @@ public class SSM {
             File archivo = new File("sanosYSospechosos.json");
 
             ListaDeSanosYSospechosos lista = new ListaDeSanosYSospechosos();
+            Registro registro;
 
             for (Paciente paciente : filaPacientes.obtenerLista()) {
                 try {
-                    Registro registro = (Registro) tablaDeRegistros.get(paciente.getNumeroDeKit());
+                    registro = (Registro) tablaDeRegistros.get(paciente.getNumeroDeKit());
                     validarCovidPositivo(registro);
 
                     //
                     lista.agregarSano(paciente);
                 } catch (ECovidPositivo e) {
-                    lista.agregarAislado(paciente);
+                    PacienteAislado pacienteAislado = new PacienteAislado(paciente.getNumeroDeKit(), e.getTemperatura(), paciente.getBarrio());
+                    lista.agregarAislado(pacienteAislado);
                 }
 
 
