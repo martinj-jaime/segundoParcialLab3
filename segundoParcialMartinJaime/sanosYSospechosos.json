@@ -1,0 +1,42 @@
+{
+  "sanos": [
+    {
+      "dni": "111",
+      "nombre": "Martin",
+      "apellido": "Jaime",
+      "edad": 20,
+      "barrio": "Barrio Pompeya",
+      "ocupacion": "Programador",
+      "numeroDeKit": 1799351785
+    },
+    {
+      "dni": "333",
+      "nombre": "Martin",
+      "apellido": "Jaime",
+      "edad": 20,
+      "barrio": "Barrio Pompeya",
+      "ocupacion": "Programador",
+      "numeroDeKit": -443643951
+    },
+    {
+      "dni": "888",
+      "nombre": "Martin",
+      "apellido": "Jaime",
+      "edad": 20,
+      "barrio": "Barrio Pompeya",
+      "ocupacion": "Programador",
+      "numeroDeKit": 831631510
+    }
+  ],
+  "aislados": [
+    {
+      "dni": "222",
+      "nombre": "Martin",
+      "apellido": "Jaime",
+      "edad": 20,
+      "barrio": "Barrio Pompeya",
+      "ocupacion": "Programador",
+      "numeroDeKit": 1269772452
+    }
+  ]
+}

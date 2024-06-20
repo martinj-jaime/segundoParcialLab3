@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net" modified="2024-06-20T00:03:09.147Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="8WdQi5lufBNM5YG42T7L" version="24.5.5" type="device">
+  <diagram name="Página-1" id="Gkbb0dMaFTgFHn_hW1A4">
+    <mxGraphModel dx="1467" dy="1949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-1" value="SSM (Sistema de salud municipal)" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="-80" width="370" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-2" value="- kitsParaTestear: Integer&lt;div&gt;- filaPacientes: FilaPacientes&amp;lt;Paciente&amp;gt;&lt;/div&gt;&lt;div&gt;- tablaDeRegistros: HashTable&amp;lt;Integer, Registro&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-1">
+          <mxGeometry y="26" width="370" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-1">
+          <mxGeometry y="90" width="370" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-4" value="&lt;div&gt;&lt;div&gt;+ init(): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ agregarPaciente(Paciente): void&lt;/div&gt;&lt;div&gt;- validarKitsDisponibles(): Boolean&lt;/div&gt;&lt;div&gt;- agregaMasKits(Integer): void&lt;/div&gt;&lt;div&gt;+ testearPacientes(): void&lt;/div&gt;&lt;div&gt;+ aislarPacientes(): void&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- testear(Paciente): void&lt;/div&gt;&lt;div&gt;- aislar(Paciente): void&lt;/div&gt;&lt;div&gt;- generateRandomTemperatura(Integer, Integer): Integer&lt;br&gt;&lt;/div&gt;+ guardarEnJson(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-1">
+          <mxGeometry y="98" width="370" height="172" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-5" value="Paciente" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="340" width="200" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-6" value="- barrio: String&lt;div&gt;- ocupacion: String&lt;/div&gt;&lt;div&gt;- numeroDeKit: Integer&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-5">
+          <mxGeometry y="26" width="200" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-5">
+          <mxGeometry y="90" width="200" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-8" value="+ getBarrio(): String&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ setBarrio(String): void&lt;/div&gt;&lt;div&gt;+ getOcupacion(): String&lt;/div&gt;&lt;div&gt;+ setOcupacion(String): void&lt;/div&gt;&lt;div&gt;+ getNumeroDeKit() : Integer&lt;/div&gt;&lt;div&gt;+ setNumeroDeKit(Integer) : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-5">
+          <mxGeometry y="98" width="200" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-9" value="Registro" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="340" width="230" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-10" value="- dni: String&lt;div&gt;- temperatura: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-9">
+          <mxGeometry y="26" width="230" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-9">
+          <mxGeometry y="70" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-12" value="+ getDni(): String&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ setDni(String): void&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ getTemperatura(): String&lt;br&gt;&lt;/div&gt;&lt;div&gt;+ setTemperatura(String): void&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-9">
+          <mxGeometry y="78" width="230" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-13" value="Persona" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="690" y="-70" width="220" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-14" value="- dni: String&lt;div&gt;- nombre: String&lt;/div&gt;&lt;div&gt;- apellido: String&lt;/div&gt;&lt;div&gt;- edad: Integer&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-13">
+          <mxGeometry y="26" width="220" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-13">
+          <mxGeometry y="90" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-16" value="&lt;div&gt;+ getDni(): String&lt;/div&gt;&lt;div&gt;+ setDni(String): void&lt;/div&gt;&lt;div&gt;+ getNombre(): String&lt;/div&gt;&lt;div&gt;+ setNombre(String): void&lt;/div&gt;&lt;div&gt;+ getApellido(): String&lt;/div&gt;&lt;div&gt;+ setApellido(String): void&lt;/div&gt;&lt;div&gt;+ getEdad(): Integer&lt;/div&gt;&lt;div&gt;+ setEdad(Integer): void&lt;/div&gt;&lt;div&gt;+ equals(Object): boolean&lt;/div&gt;&lt;div&gt;+ hashCode(): int&lt;/div&gt;&lt;div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-13">
+          <mxGeometry y="98" width="220" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.455;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=3;" edge="1" parent="1" source="SMGFQkXlxbGLJCLTdEEs-5" target="SMGFQkXlxbGLJCLTdEEs-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.719;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamond;endFill=1;strokeWidth=3;" edge="1" parent="1" source="SMGFQkXlxbGLJCLTdEEs-6" target="SMGFQkXlxbGLJCLTdEEs-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-20" value="FilaPacientes" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="320" width="240" height="148" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-21" value="- pacientes: Queue&amp;lt;T&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-20">
+          <mxGeometry y="26" width="240" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-22" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-20">
+          <mxGeometry y="50" width="240" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-23" value="+ obtenerLista(): Queue&amp;lt;T&amp;gt;&lt;div&gt;+ agregarPaciente(T): void&lt;/div&gt;&lt;div&gt;+ validarEsPacienteNuevo(T): Boolean&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-20">
+          <mxGeometry y="78" width="240" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-24" value="ListaDeSanosYSospechosos" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="500" width="235" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-25" value="- sanos: List&amp;lt;Paciente&amp;gt;&lt;div&gt;- aislados:&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;List&amp;lt;Paciente&amp;gt;&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-24">
+          <mxGeometry y="26" width="235" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-24">
+          <mxGeometry y="70" width="235" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-27" value="+ getSanos(): List&amp;lt;Paciente&amp;gt;&lt;div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ setSanos(List&amp;lt;Paciente&amp;gt;): void&lt;/div&gt;&lt;div&gt;+ getAislados(): List&amp;lt;Paciente&amp;gt;&lt;/div&gt;&lt;div&gt;+ setAislados(List&amp;lt;Paciente&amp;gt;): void&lt;/div&gt;&lt;div&gt;+ agregarSano(Paciente) : void&lt;/div&gt;&lt;div&gt;+ agregarAislado(Paciente) : void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="SMGFQkXlxbGLJCLTdEEs-24">
+          <mxGeometry y="78" width="235" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.017;entryY=0.338;entryDx=0;entryDy=0;entryPerimeter=0;startArrow=diamond;startFill=1;endArrow=none;endFill=0;sourcePerimeterSpacing=0;jumpSize=12;strokeWidth=2;" edge="1" parent="1" source="SMGFQkXlxbGLJCLTdEEs-2" target="SMGFQkXlxbGLJCLTdEEs-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=diamond;endFill=1;strokeWidth=3;" edge="1" parent="1" source="SMGFQkXlxbGLJCLTdEEs-6" target="SMGFQkXlxbGLJCLTdEEs-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SMGFQkXlxbGLJCLTdEEs-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=diamond;endFill=1;strokeWidth=3;" edge="1" parent="1" source="SMGFQkXlxbGLJCLTdEEs-6" target="SMGFQkXlxbGLJCLTdEEs-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
